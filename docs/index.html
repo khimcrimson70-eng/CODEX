@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CODEX — MLBB Hero Mastery Hub</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>CODEX — MLBB Hero Mastery Hub</h1>
+    <p class="lead">Select a hero to view role, description, win rate, ban rate, and appearance rate. Data is loaded dynamically.</p>
+
+    <label for="heroSelect">Choose a hero</label>
+    <select id="heroSelect">
+      <option value="">Loading heroes...</option>
+    </select>
+
+    <section id="heroCard" class="card hidden">
+      <h2 id="heroName"></h2>
+      <p id="heroRole" class="muted"></p>
+      <p id="heroDesc"></p>
+
+      <ul class="stats">
+        <li>Win Rate: <strong id="winRate">-</strong></li>
+        <li>Ban Rate: <strong id="banRate">-</strong></li>
+        <li>Appearance Rate: <strong id="pickRate">-</strong></li>
+      </ul>
+    </section>
+
+    <p id="status" class="muted small">Status: Initializing…</p>
+  </main>
+
+  <script src="./main.js" defer></script>
+</body>
+</html>
